@@ -31,7 +31,7 @@ export default function NavBar() {
             <li><a className='navLink' href="#">{getText('washingMachines')}</a></li>
             <li><a className='navLink' href="#">Кондиционеры</a></li>
             <li><a className='navLink' href="#">Холодильники</a></li>
-            <li><a className='navLink navCall' href="#">Позвонить мастеру</a></li>
+            <li><a className='navLink navCall' href="tel:+998935992504">Позвонить мастеру</a></li>
             <ul className='langList'>
               <li className='langWrap d-flex align-items-center'>
                 <h5 className='nav-link d-flex align-items-center'>
@@ -48,6 +48,5 @@ export default function NavBar() {
       </nav>
     </div>
   </section>
-
   )
 }
