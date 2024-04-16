@@ -16,7 +16,7 @@ a {
 }
 
 .navSection {
-  background-color: #777;
+  border-bottom: 2px solid #999;
 }
 
 .navbar{
@@ -48,11 +48,24 @@ a {
   top: 10px;
 }
 
+.navbar .navList .navCall {
+  font-size: 18px;
+  padding: 12px 15px;
+  border: 2px solid #F79E1B;
+  border-radius: 35px;
+}
+
+.navbar .navList .navCall:hover {
+  background-color: #F79E1B;
+  transition: ease-in .2s;
+  color: #fff;
+}
+
 .navbar .toggle-icon{
   display: none
 }
 
-@media(max-width: 844px) {
+@media(max-width: 894px) {
   .navbar{
     position: relative;
     transition: 0.5s all ease-in-out;
@@ -88,7 +101,7 @@ a {
 
   .navbar .toggle-icon{
     display: block;
-    color: #D9D2C3;
+    color: #F79E1B;
     position: absolute;
     top: 20px;
     right: 20px;

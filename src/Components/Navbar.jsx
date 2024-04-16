@@ -23,7 +23,7 @@ export default function NavBar() {
             <li><a className='navLink' href="#">Стиральные машины</a></li>
             <li><a className='navLink' href="#">Кондиционеры</a></li>
             <li><a className='navLink' href="#">Холодильники</a></li>
-            <li><a className='navLink' href="#">Позвонить мастеру</a></li>
+            <li><a className='navLink navCall' href="#">Позвонить мастеру</a></li>
           </ul>
       </nav>
     </div>
