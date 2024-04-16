@@ -1,4 +1,6 @@
 import './App.scss';
+import './Responsive.scss'
+import './App.css'
 import Home from './Components/Home';
 
 function App() {

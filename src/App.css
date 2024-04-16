@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navSection {
+  background-color: #777;
+}
+
+.navbar{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo{
+  color: #F79E1B;
+  font-weight: 700;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navbar .navList{
+  list-style: none;
+  display: flex;
+}
+
+.navbar .navList .navLink {
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+}
+
+.navbar .toggle-icon{
+  display: none
+}
+
+@media(max-width: 844px) {
+  .navbar{
+    position: relative;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .navbar.expanded{
+    height: 100vh;
+  }
+
+  .navbar.expanded .navList{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+  }
+
+  .navbar.expanded .navList .navLink{
+    font-size: 24px;
+    display: block;
+    top: -10px;
+  }
+
+  .navbar .logo{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+  }
+
+  .navbar .toggle-icon{
+    display: block;
+    color: #D9D2C3;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .navbar .navList{
+    position: absolute;
+    top: -300px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar .navList .navLink{
+    margin: 60px 0;
+    font-size: 24px;
+  }
+}

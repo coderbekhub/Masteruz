@@ -1,43 +1,33 @@
-import React from 'react'
+import React,{useState} from 'react'
+import {Icon} from 'react-icons-kit'
+import {menu} from 'react-icons-kit/feather/menu'
+import {x} from 'react-icons-kit/feather/x'
 
-export default function Navbar() {
+export default function NavBar() {
+
+  const [toggle, setToggle]=useState(false);
+
+  const handleToggle=()=>{
+    setToggle(!toggle);
+  }
+
   return (
-    <>
-      <section className='navSection'>
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div className="container">
-            <div className='navContent'>
-              <div className='navBrand'>
-                <a class="navbar-brand" href="/">Masteruz</a>
-              </div>
-              
-              <div className='navBurger'>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
-
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav">
-                  <li>
-                    <a class="nav-link active" aria-current="page" href="#">Стиральные машины</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#">Кондиционеры</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#">Холодильники</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="tel:+998935992504">Позвонить мастеру</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
+  <section className='navSection'>
+    <div className="container">
+      <nav className={toggle?'navbar expanded':'navbar'}>
+        <a className='logo' href="/">MasterUz</a>
+          <div className='toggle-icon' onClick={handleToggle}>
+            {toggle?<Icon icon={x} size={40}/>:<Icon icon={menu} size={40}/>}
           </div>
-        </nav>      
-      </section>
-    </>
+          <ul className='navList'>
+            <li><a className='navLink' href="#">Стиральные машины</a></li>
+            <li><a className='navLink' href="#">Кондиционеры</a></li>
+            <li><a className='navLink' href="#">Холодильники</a></li>
+            <li><a className='navLink' href="#">Позвонить мастеру</a></li>
+          </ul>
+      </nav>
+    </div>
+  </section>
+
   )
 }
