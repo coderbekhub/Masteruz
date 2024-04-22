@@ -169,8 +169,13 @@
 // HERO SECTION
 
 .serviceSection {
+  padding-bottom: 100px;
   .serviceContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .servieceInfo {
+      padding-top: 100px;
       h2 {
         font-weight: 400;
         font-size: 42px;
@@ -192,11 +197,20 @@
         font-size: 18px;
         line-height: 26px;
         color: #222;
-        margin-bottom: 13px;
+        margin-bottom: 40px;
       }
 
       a {
-
+        font-size: 18px;
+        padding: 12px 15px;
+        border: 2px solid #F79E1B;
+        border-radius: 35px;
+        color: #000;
+        &:hover {
+          background-color: #F79E1B;
+          transition: ease-in .2s;
+          color: #fff;
+        }
       }
     }
 
@@ -204,6 +218,115 @@
       img {
         width: 585px;
         height: 546px;
+      }
+    }
+  }
+}
+
+// Fridge Section Start 
+
+.fridgeSection {
+  .fridgeContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .fridgeImg {
+      img {
+        width: 585px;
+        height: 657px;
+      }
+    }
+
+    .fridgeInfo {
+      padding-top: 200px;
+      h2 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 43.2px;
+        color: #222;
+        margin-bottom: 22px;
+      }
+
+      p {
+        width: 440px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #222;
+      }
+    }
+  }
+}
+
+// Washing Machine Section Start 
+
+.washingMachineSection {
+  padding-bottom: 100px;
+  .washingMachineContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .washingMachineImg {
+      img {
+        width: 585px;
+        height: 587px;
+      }
+    }
+
+    .washingMachineInfo {
+      padding-top: 200px;
+      h2 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 43.2px;
+        color: #222;
+        margin-bottom: 22px;
+      }
+
+      p {
+        width: 440px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #222;
+      }
+    }
+  }
+}
+
+// Condicioner Section Start 
+
+.condicionerSection {
+  padding-bottom: 100px;
+  .condicionerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .condicionerImg {
+      img {
+        width: 585px;
+        height: 657px;
+      }
+    }
+
+    .condicionerInfo {
+      padding-top: 200px;
+      h2 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 43.2px;
+        color: #222;
+        margin-bottom: 22px;
+      }
+
+      p {
+        width: 440px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #222;
       }
     }
   }
