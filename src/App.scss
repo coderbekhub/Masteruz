@@ -15,6 +15,7 @@
 // NAVBAR START
 
 .navSection {
+  margin-bottom: 40px;
   .navbar {
     .navContent {
       display: flex;
@@ -162,6 +163,48 @@
         }
       }
     }
+  }
+}
 
+// HERO SECTION
+
+.serviceSection {
+  .serviceContent {
+    .servieceInfo {
+      h2 {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 50.4px;
+        color: #222;
+      }
+
+      h3 {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 50.4px;
+        color: #222;
+        margin-bottom: 23px;
+      }
+
+      p {
+        width: 400px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #222;
+        margin-bottom: 13px;
+      }
+
+      a {
+
+      }
+    }
+
+    .serviceImg {
+      img {
+        width: 585px;
+        height: 546px;
+      }
+    }
   }
 }
