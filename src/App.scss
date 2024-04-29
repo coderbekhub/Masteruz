@@ -214,12 +214,12 @@
       }
     }
 
-    .serviceImg {
-      img {
-        width: 585px;
-        height: 546px;
-      }
-    }
+    // .serviceImg {
+    //   img {
+    //     width: 585px;
+    //     height: 546px;
+    //   }
+    // }
   }
 }
 
@@ -230,13 +230,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 100px;
 
-    .fridgeImg {
-      img {
-        width: 585px;
-        height: 657px;
-      }
-    }
+    // .fridgeImg {
+    //   img {
+    //     width: 585px;
+    //     height: 657px;
+    //   }
+    // }
 
     .fridgeInfo {
       padding-top: 200px;
@@ -267,12 +268,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .washingMachineImg {
-      img {
-        width: 585px;
-        height: 587px;
-      }
-    }
+    // .washingMachineImg {
+    //   img {
+    //     width: 585px;
+    //     height: 587px;
+    //   }
+    // }
 
     .washingMachineInfo {
       padding-top: 200px;
@@ -304,12 +305,12 @@
     justify-content: space-between;
     align-items: center;
 
-    .condicionerImg {
-      img {
-        width: 585px;
-        height: 657px;
-      }
-    }
+    // .condicionerImg {
+    //   img {
+    //     width: 585px;
+    //     height: 657px;
+    //   }
+    // }
 
     .condicionerInfo {
       padding-top: 200px;
