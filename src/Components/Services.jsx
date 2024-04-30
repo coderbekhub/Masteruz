@@ -13,9 +13,9 @@ export default function Services() {
             <a href="#">Узнать больше</a>
           </div>
 
-          <div className="serviceImg col-md-6 col-12">
+          {/* <div className="serviceImg col-md-6 col-12">
             <img src={HeroImg1} alt="heroImg" />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

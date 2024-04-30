@@ -15,7 +15,6 @@
 // NAVBAR START
 
 .navSection {
-  margin-bottom: 40px;
   .navbar {
     .navContent {
       display: flex;
@@ -169,7 +168,9 @@
 // HERO SECTION
 
 .serviceSection {
-  padding-bottom: 100px;
+  background: url(./img/heroImg.png);background-repeat: no-repeat;background-size: cover;background-position: center;
+  height: 92vh;
+  margin-bottom: 100px;
   .serviceContent {
     display: flex;
     justify-content: space-between;
