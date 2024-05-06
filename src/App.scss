@@ -176,27 +176,27 @@
     justify-content: space-between;
     align-items: center;
     .servieceInfo {
-      padding-top: 100px;
+      padding-top: 150px;
       h2 {
-        font-weight: 400;
-        font-size: 42px;
-        line-height: 50.4px;
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 70.4px;
         color: #222;
       }
 
       h3 {
-        font-weight: 400;
-        font-size: 42px;
-        line-height: 50.4px;
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 70.4px;
         color: #222;
         margin-bottom: 23px;
       }
 
       p {
         width: 400px;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 30px;
         color: #222;
         margin-bottom: 40px;
       }
@@ -206,7 +206,8 @@
         padding: 12px 15px;
         border: 2px solid #F79E1B;
         border-radius: 35px;
-        color: #000;
+        color: #fff;
+        font-weight: 600;
         &:hover {
           background-color: #F79E1B;
           transition: ease-in .2s;
@@ -233,15 +234,21 @@
     align-items: center;
     padding-bottom: 100px;
 
-    // .fridgeImg {
-    //   img {
-    //     width: 585px;
-    //     height: 657px;
-    //   }
-    // }
+    .fridgeImg {
+      img {
+        object-fit: cover;
+        transform: scale(1);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+    }
 
     .fridgeInfo {
-      padding-top: 200px;
+      padding-top: 100px;
       h2 {
         font-size: 36px;
         font-weight: 400;
@@ -259,7 +266,6 @@
       }
     }
   }
-}
 
 // Washing Machine Section Start 
 
@@ -269,12 +275,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // .washingMachineImg {
-    //   img {
-    //     width: 585px;
-    //     height: 587px;
-    //   }
-    // }
+    .washingMachineImg {
+      img {
+        object-fit: cover;
+        transform: scale(1);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
 
     .washingMachineInfo {
       padding-top: 200px;
@@ -300,18 +311,23 @@
 // Condicioner Section Start 
 
 .condicionerSection {
-  padding-bottom: 100px;
+  padding-bottom: 170px;
   .condicionerContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    // .condicionerImg {
-    //   img {
-    //     width: 585px;
-    //     height: 657px;
-    //   }
-    // }
+    .condicionerImg {
+      img {
+        object-fit: cover;
+        transform: scale(1);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
 
     .condicionerInfo {
       padding-top: 200px;
@@ -329,6 +345,44 @@
         font-weight: 400;
         line-height: 26px;
         color: #222;
+      }
+    }
+  }
+}
+
+// PARTNERS SECTION START
+
+.partnerSection {
+  margin-bottom: 100px;
+  .partnersInfo {
+    text-align: center;
+    margin-bottom: 50px;
+    h2 {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+    }
+
+    p {
+      width: 584px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 46px;
+    }
+  }
+
+  .partnersContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      align-items: center;  
+      img {
+        cursor: pointer;
       }
     }
   }

@@ -4,6 +4,7 @@ import Services from './Services'
 import Fridge from './Fridge'
 import WashingMachine from './WashingMachine'
 import Condicioner from './Condicioner'
+import Partners from './Partners'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Fridge />
       <WashingMachine />
       <Condicioner />
+      <Partners />
     </>
   )
 }

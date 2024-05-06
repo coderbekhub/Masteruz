@@ -15,10 +15,6 @@ a {
   text-decoration: none;
 }
 
-.navSection {
-  border-bottom: 2px solid #999;
-}
-
 .navbar{
   height: 80px;
   display: flex;
@@ -72,7 +68,7 @@ a {
   }
 
   .navbar.expanded{
-    height: 100vh;
+    height: 109vh;
   }
 
   .navbar.expanded .navList{
