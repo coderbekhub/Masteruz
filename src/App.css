@@ -24,7 +24,7 @@ a {
 
 .navbar .logo{
   color: #F79E1B;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 30px;
   cursor: pointer;
 }
@@ -36,8 +36,8 @@ a {
 
 .navbar .navList .navLink {
   margin-left: 30px;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
   color: #000;
   cursor: pointer;
   position: relative;
@@ -53,7 +53,8 @@ a {
 
 .navbar .navList .navCall:hover {
   background-color: #F79E1B;
-  transition: ease-in .2s;
+  /* transition: ease-in .2s; */
+  transition: all .4s ease-in-out;
   color: #fff;
 }
 
