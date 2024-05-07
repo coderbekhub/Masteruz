@@ -170,7 +170,7 @@
 .serviceSection {
   background: url(./img/heroImg.png);background-repeat: no-repeat;background-size: cover;background-position: center;
   height: 92vh;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   .serviceContent {
     display: flex;
     justify-content: space-between;
@@ -232,7 +232,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 
     .fridgeImg {
       img {
@@ -248,7 +248,7 @@
     }
 
     .fridgeInfo {
-      padding-top: 100px;
+      padding-top: 150px;
       h2 {
         font-size: 36px;
         font-weight: 700;
@@ -270,7 +270,7 @@
 // Washing Machine Section Start 
 
 .washingMachineSection {
-  padding-bottom: 100px;
+  padding-bottom:150px;
   .washingMachineContent {
     display: flex;
     justify-content: space-between;
@@ -353,7 +353,7 @@
 // PARTNERS SECTION START
 
 .partnerSection {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   .partnersInfo {
     text-align: center;
     margin-bottom: 50px;
@@ -391,7 +391,7 @@
 // WORKING SECTION START
 
 .workingSection {
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   .workingText {
     text-align: center;
     margin-bottom: 80px;
@@ -419,13 +419,52 @@
     .workingCard {
       width: 300px;
       height: 400px;
-      padding: 33px 30px 0 40px;
+      padding: 33px 15px 0 40px;
       background: #F79E1B;
       border-radius: 20px;
       margin: 0 20px 0 20px;
       cursor: pointer;
       margin-bottom: 40px;
       transform: scale(1);
+
+      &:hover {
+        h2 {
+          color: #f7f7f7;
+          transition: all .5s ease-in-out;
+        }
+
+        p {
+          color: #f7f7f7;
+          transition: all .5s ease-in-out;
+        }
+      }
+
+      &:nth-child(1):hover {
+        background: #32CD32;
+        transition: all .5s ease-in-out;
+        
+        div {
+          background: #B0E0E6;
+        }
+      }
+
+      &:nth-child(2):hover {
+        background: #48D1CC;
+        transition: all .5s ease-in-out;
+        
+        div {
+          background: #B0E0E6;
+        }
+      }
+
+      &:nth-child(3):hover {
+        background: #FF7F50; 
+        transition: all .5s ease-in-out;
+        
+        div {
+          background: #f7b249;
+        }
+      }
       &:hover {
         img {
           transition: all .5s ease-in-out;
@@ -466,7 +505,7 @@
 // ACCORDION SECTION START
 
 .accordionSection {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 
   .accordionText {
     text-align: center;
@@ -499,6 +538,159 @@
             height: 40px;
           }
         }
+      }
+    }
+  }
+}
+
+// CARDS SECTION START
+
+.cardSection {
+  margin-bottom: 150px;
+  .cardsContent {
+    .cards {
+      width: 260px;
+      height: 400px;
+      padding: 33px 20px 0 20px;
+      background: #F79E1B;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 0 20px 20px 20px;
+      margin: 0 auto;
+      transform: scale(1);
+
+      &:nth-child(1):hover {
+        background: #00FF7F;
+        transition: all 3s ease-in-out;
+
+        div {
+          background: #72feb8;
+          transition: all 3s ease-in-out;
+          border: 1.5px solid #000000B2;
+        }
+
+        h2 {
+          color: #fff;
+          transition: all 3s ease-in-out;
+        }
+  
+        p {
+          color: #fff;
+          transition: all 3s ease-in-out;
+        }
+        img {
+          transition: all .3s ease-in-out;
+          transform: scale(1.1);
+        }
+      }
+      
+      &:nth-child(2):hover {
+        background: #00FFFF;
+        transition: all 3s ease-in-out;
+
+        div {
+          background: #7bffff;
+          border: 1.5px solid #000000B2;
+          transition: all 3s ease-in-out;
+        }
+
+        h2 {
+          color: #fff;
+          transition: all 3s ease-in-out;
+        }
+  
+        p {
+          color: #fff;
+          transition: all 3s ease-in-out;
+        }
+        img {
+          transition: all .3s ease-in-out;
+          transform: scale(1.1);
+        }
+      }
+
+      &:nth-child(3):hover {
+        background: #FF7F50;
+        transition: all 3s ease-in-out;
+
+        div {
+          background: #fca788;
+          border: 1.5px solid #000000B2;
+          transition: all 3s ease-in-out;
+        }
+
+
+        h2 {
+          color: #fff;
+          transition: all 3s ease-in-out;
+        }
+  
+        p {
+          color: #fff;
+          transition: all 3s ease-in-out;
+        }
+        img {
+          transition: all .3s ease-in-out;
+          transform: scale(1.1);
+        }
+      }
+
+      &:nth-child(4):hover {
+        background: #1E90FF;
+        transition: all 3s ease-in-out;
+
+        div {
+          background: #89c3fd;
+          border: 1.5px solid #000000B2;
+          transition: all 3s ease-in-out;
+        }
+
+        h2 {
+          color: #fff;
+          transition: all 3s ease-in-out;
+        }
+  
+        p {
+          color: #fff;
+          transition: all 3s ease-in-out;
+        }
+
+        img {
+          transition: all .3s ease-in-out;
+          transform: scale(1.1);
+        }
+      }
+
+      div {
+        width: 90px;
+        height: 90px;
+        border-radius: 20px;
+        background: #f7b249;
+        margin-bottom: 20px;
+
+        img {
+          widows: 44px;
+          height: 44px;
+          object-fit: cover;
+          display: inline-block;
+          display: flex;
+          margin: 0 auto;
+          position: relative;
+          top: 20px;
+        }
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 28px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
       }
     }
   }
