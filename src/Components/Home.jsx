@@ -8,6 +8,8 @@ import Partners from './Partners'
 import WeWorking from './WeWorking'
 import Accordion from './Accordion'
 import Cards from './Cards'
+import Repairing from './Repairing'
+import Contact from './Contact'
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
       <WeWorking />
       <Accordion />
       <Cards />
+      <Repairing />
+      <Contact />
     </>
   )
 }

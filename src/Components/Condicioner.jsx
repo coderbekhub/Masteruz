@@ -1,5 +1,5 @@
 import React from 'react'
-import CondicionerImg from '../img/Condicioner.png'
+import CondicionerImg from '../img/condicioner2.png'
 
 export default function Condicioner() {
   return (

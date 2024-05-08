@@ -1,5 +1,5 @@
 import React from 'react'
-import FridgeImg from '../img/fridge.png'
+import FridgeImg from '../img/fridge2.png'
 
 export default function Fridge() {
   return (
