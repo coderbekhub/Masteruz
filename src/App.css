@@ -15,21 +15,21 @@ a {
   text-decoration: none;
 }
 
-.navbar{
+.navbar {
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar .logo{
+.navbar .logo {
   color: #F79E1B;
   font-weight: 900;
   font-size: 30px;
   cursor: pointer;
 }
 
-.navbar .navList{
+.navbar .navList {
   list-style: none;
   display: flex;
 }
