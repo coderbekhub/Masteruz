@@ -85,7 +85,7 @@ export default function Contact() {
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d891.2227283855061!2d69.32481349773276!3d41.293546371048755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef56d60826423%3A0x10773a3cd5c4658e!2z0JTRg9GB0YLQu9C40LotMg!5e0!3m2!1sru!2s!4v1715167947900!5m2!1sru!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div className='contactForm'>
+            <div className='contactForm'> 
               <h2>Biz bilan aloqa</h2>
               <p>Savolingiz bormi? U holda quyidagi bo`limlarni to`ldiring, va bizga yuboring. Sizga tez orada javob beramiz!</p>
               <form onSubmit={sendForm}>
