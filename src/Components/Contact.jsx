@@ -92,14 +92,16 @@ export default function Contact() {
                   <i class='bx bxl-instagram-alt' ></i>
                   @tamirlashxizmati</a>
               </div>
-              <div className='col-md-12 col-12 '>
-                <iframe width={350} height={300} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d891.2227283855061!2d69.32481349773276!3d41.293546371048755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef56d60826423%3A0x10773a3cd5c4658e!2z0JTRg9GB0YLQu9C40LotMg!5e0!3m2!1sru!2s!4v1715167947900!5m2!1sru!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div className='col-md-12 col-12 frame'>
+                <iframe width={455} height={300} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d891.2227283855061!2d69.32481349773276!3d41.293546371048755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef56d60826423%3A0x10773a3cd5c4658e!2z0JTRg9GB0YLQu9C40LotMg!5e0!3m2!1sru!2s!4v1715167947900!5m2!1sru!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
 
             <div className='contactForm col-md-6 col-12'> 
-              <h2>Biz bilan aloqa</h2>
-              <p>Savolingiz bormi? U holda quyidagi bo`limlarni to`ldiring, va bizga yuboring. Sizga tez orada javob beramiz!</p>
+              <div className='contactInfo'>
+                <h2>Biz bilan aloqa</h2>
+                <p>Savolingiz bormi? U holda quyidagi bo`limlarni to`ldiring, va bizga yuboring. Sizga tez orada javob beramiz!</p>
+              </div>
               <form onSubmit={sendForm}>
                 <input type="text" id='name' required placeholder='Ismingiz' onChange={() => setError(p => ({ ...p, name: [false, ''] }))} style={error.name[0] ? styled : null} />
                 {error.name[0] && <p style={{ color: 'red' }}>{error.name[1]}</p>}
