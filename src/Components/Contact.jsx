@@ -84,7 +84,7 @@ export default function Contact() {
             <div className='contactMap col-md-6 col-12'>
               <div className='col-md-12 col-12'>
                 <div>
-                  <a href="tel:+998935992504">
+                  <a href="tel:+998935992504">  
                     <i class='bx bxs-phone'></i>
                     +998 93 599-25-04</a>
                 </div>
