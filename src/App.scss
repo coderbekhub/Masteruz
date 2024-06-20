@@ -870,6 +870,11 @@ section {
           height: 40px;
           border-radius: 20px;
           background: none;
+
+          &:hover {
+            background: #F79E1B;
+            
+          }
         }
       }
     }

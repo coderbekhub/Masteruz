@@ -80,7 +80,7 @@ export default function Contact() {
     <>
       <section className="contactSection">
         <div className="container">
-          <div className='row contactContent'>
+          <div className='row contactContent '>
             <div className='contactMap col-md-6 col-12'>
               <div className='col-md-12 col-12'>
                 <div>
@@ -99,11 +99,11 @@ export default function Contact() {
 
             <div className='contactForm col-md-6 col-12'> 
               <div className='contactInfo'>
-                <h2>Biz bilan aloqa</h2>
-                <p>Savolingiz bormi? U holda quyidagi bo`limlarni to`ldiring, va bizga yuboring. Sizga tez orada javob beramiz!</p>
+                <h2>Связаться с нами</h2>
+                <p>У вас есть вопрос? Затем заполните следующие разделы и отправьте нам. Мы ответим вам в ближайшее время!</p> 
               </div>
               <form onSubmit={sendForm}>
-                <input type="text" id='name' required placeholder='Ismingiz' onChange={() => setError(p => ({ ...p, name: [false, ''] }))} style={error.name[0] ? styled : null} />
+                <input type="text" id='name' required placeholder='Ваше имя' onChange={() => setError(p => ({ ...p, name: [false, ''] }))} style={error.name[0] ? styled : null} />
                 {error.name[0] && <p style={{ color: 'red' }}>{error.name[1]}</p>}
 
                 <input onChange={() => setError(p => ({ ...p, name: [false, ''] }))} style={error.name[0] ? styled : null} type="tel" id='number'  
@@ -112,14 +112,14 @@ export default function Contact() {
                   e.target.setCustomValidity("");
                   if (!e.target.validity.valid) {
                     e.target.setCustomValidity(
-                      "Raqamni noto'g'ri kiritdingiz! Misol: +998 (97) 7770777"
+                      "Вы ввели неправильный номер! Пример: +998 (97) 7770777."
                     );
                   }
                     setError(p => ({ ...p, phone: [false, ''] }))
                   }} pattern="[+]{1}[0-9]{3}[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}"
                 /> 
               {error.phone[0] && <p style={{ color: 'red' }}>{error.phone[1]}</p>}
-              <button>Yuborish</button>
+              <button>Отправить</button>
               </form>
             </div>
           </div>
